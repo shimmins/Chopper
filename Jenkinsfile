@@ -20,7 +20,7 @@ pipeline {
                 }
             }
         }
-        
+
         stage('Argo Git Clone') {
             steps {
                 git branch: 'main', credentialsId: 'credintials-ssh', url: 'https://github.com/shimmins/docker-spring-boot-deploy.git'
@@ -38,6 +38,6 @@ pipeline {
                 '''
             }
         }
-        
+
     }
 }
